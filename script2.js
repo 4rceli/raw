@@ -29,7 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
- // Abrir sidebar
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const sidebar = document.getElementById("sidebar");
+    const closeSidebar = document.getElementById("close-sidebar");
+
+    // Abrir sidebar
     menuToggle.addEventListener("click", (e) => {
         e.stopPropagation(); // impede que o clique suba pro window
         sidebar.style.right = "0";
@@ -59,6 +64,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 
 
