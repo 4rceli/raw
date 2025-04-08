@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.Raw</title>
+
+    <!-- Importação do CSS principal da página -->
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <!-- Script de funcionalidades adicionais -->
+    <script src="script2.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho principal com logo e navegação -->
+    <header>
+        <!-- Logos agrupadas -->
+        <div class="heater-logo">
+            <img src="/img/raw.logo-removebg-preview.png" alt="Logo RAW" class="logo-img">
+            <img src="/img/koi.logo2.0-removebg-preview.png" alt="Logo KOI" class="logo-img">
+        </div>
+    
+        <!-- Botão de menu mobile (hambúrguer) -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+        <!-- Navegação principal (visível apenas em telas maiores) -->
+        <nav class="nav-links" id="nav-links">
+            <a href="/index.html">.RAW</a>
+            <a href="/koi.html">KOI</a>
+            <a href="/equipe.html">Equipe</a>
+            <a href="/projetos.html">Trabalhos</a>
+            <a href="/login.html">Login</a>
+            <a href="#" id="open-contact" class="contact-link">Contato</a>
+        </nav>
+    
+        <!-- Ícone de configurações -->
+        <div class="config">⚙️</div>
+    </header>
+    
+    <!-- Sidebar mobile -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-sidebar" id="close-sidebar">&times;</div>
+        <a href="/index.html">.RAW</a>
+        <a href="/koi.html">KOI</a>
+        <a href="/equipe.html">Equipe</a>
+        <a href="/projetos.html">Trabalhos</a>
+        <a href="/login.html">Login</a>
+        <a href="#" id="open-contact-mobile">Contato</a>
+    </div>
+    
+    <!-- Modal com informações de contato (abre ao clicar em 'Contato') -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Informações de Contato</h2>
+            <p><strong>Endereço:</strong> Rua João Negrão, 1285 - Rebouças, Curitiba - PR, 80230-150</p>
+            <p><strong>Telefone:</strong> (41) 3212-8700</p>
+            <p><strong>Email:</strong> <a href="mailto:curitiba@ifpr.edu.br">curitiba@ifpr.edu.br</a></p>
+            <p><strong>Horário de atendimento:</strong> Segunda a Sexta, das 8h às 20h</p>
+        </div>
+    </div>
+    
+
+    <!-- Conteúdo principal da página -->
+    <div class="container">
+
+        <!-- Seção com imagem e apresentação da empresa -->
+        <div class="logo">
+            <img class="imglogo" src="/img/todos.JPG" alt="logo.raw">
+            <img class="imglogo" src="/img/raw.logo-removebg-preview.png" alt="">
+            
+            <div class="quemsomos">
+                <h2>Quem nós Somos</h2>
+
+                <div class="quemsomos-texto">
+                    <p><br>A .RAW é uma agência de fotografia publicitária Full-Service, criada para atender todas as demandas do mercado em um único local. Reconhecida pela sua flexibilidade, a .RAW adapta-se a qualquer necessidade, oferecendo serviços em todo o Brasil.<br>
+                    <br>Nosso time é composto por profissionais dedicados em diversas áreas da fotografia, sempre comprometidos com a excelência e com a integridade dos nossos clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção com valores, missão e visão -->
+        <div class="valores">
+            <h2>Valores, Missão, Visão - RAW</h2>
+        
+            <h3>Valores</h3>
+            <p>Inovação, autenticidade e compromisso com a excelência visual. Valorizamos o processo criativo tanto quanto o resultado final e acreditamos na força da colaboração para gerar impacto.</p>
+        
+            <h3 class="missao">Missão</h3>
+            <p class="missao">Traduzir ideias em experiências visuais que provoquem, inspirem e conectem. A RAW existe para transformar o comum em extraordinário através do design e da arte.</p>
+        
+            <h3>Visão</h3>
+            <p>Ser referência nacional em estética disruptiva e comunicação visual independente, moldando tendências e contando histórias com identidade e ousadia.</p>
+        </div>
+        
+    <!-- Rodapé com informações adicionais -->
+    <footer>
+        <div class="footer-content">
+
+            <!-- Seção de direitos autorais e navegação -->
+            <div class="footer-section">
+                <p>&copy; 2025 RAW. Todos os direitos reservados.</p>
+                <nav>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Suporte</a>
+                </nav>
+            </div>
+
+            <!-- Formulário de login no rodapé -->
+            <div class="footer-section">
+                <h3>Login</h3>
+                <form action="#" method="post" class="login-form">
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="password" name="senha" placeholder="Sua senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Informações de contato (rodapé) -->
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: <a href="mailto:adms.raw@raw.com">contato@raw.com</a></p>
+                <p>Telefone: <a href="tel:+554135351606">(41) 3535-1606</a></p>
+                <p>Endereço: R. João Negrão, 1285 - Rebouças, Curitiba - PR, 80230-150</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

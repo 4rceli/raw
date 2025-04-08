@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <!-- Logos agrupadas -->
+        <div class="heater-logo">
+            <img src="/img/raw.logo-removebg-preview.png" alt="Logo RAW" class="logo-img">
+            <img src="/img/koi.logo2.0-removebg-preview.png" alt="Logo KOI" class="logo-img">
+        </div>
+    
+        <!-- Botão de menu mobile (hambúrguer) -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+        <!-- Navegação principal (visível apenas em telas maiores) -->
+        <nav class="nav-links" id="nav-links">
+            <a href="/index.html">.RAW</a>
+            <a href="/koi.html">KOI</a>
+            <a href="/equipe.html">Equipe</a>
+            <a href="/projetos.html">Trabalhos</a>
+            <a href="/login.html">Login</a>
+            <a href="#" id="open-contact" class="contact-link">Contato</a>
+        </nav>
+    
+        <!-- Ícone de configurações -->
+        <div class="config">⚙️</div>
+    </header>
+    
+    <!-- Sidebar mobile -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-sidebar" id="close-sidebar">&times;</div>
+        <a href="/index.html">.RAW</a>
+        <a href="/koi.html">KOI</a>
+        <a href="/equipe.html">Equipe</a>
+        <a href="/projetos.html">Trabalhos</a>
+        <a href="/login.html">Login</a>
+        <a href="#" id="open-contact-mobile">Contato</a>
+    </div>
+    
+    <!-- Modal com informações de contato -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Informações de Contato</h2>
+            <p><strong>Endereço:</strong> Rua João Negrão, 1285 - Rebouças, Curitiba - PR, 80230-150</p>
+            <p><strong>Telefone:</strong> (41) 3212-8700</p>
+            <p><strong>Email:</strong> <a href="mailto:curitiba@ifpr.edu.br">curitiba@ifpr.edu.br</a></p>
+            <p><strong>Horário de atendimento:</strong> Segunda a Sexta, das 8h às 20h</p>
+        </div>
+    </div>
+    
+
+
+
+    <div class="login">
+        <h1>Login</h1>
+
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            
+            <!-- Seção de direitos e navegação -->
+            <div class="footer-section">
+                <p>&copy; 2025 RAW. Todos os direitos reservados.</p>
+                <nav>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Suporte</a>
+                </nav>
+            </div>
+    
+            <!-- Formulário de login -->
+            <div class="footer-section">
+                <h3>Login</h3>
+                <form action="#" method="post" class="login-form">
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="password" name="senha" placeholder="Sua senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+    
+            <!-- Informações de contato -->
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: <a href="mailto:contato@raw.com">contato@raw.com</a></p>
+                <p>Telefone: <a href="tel:+550000000000">(00) 0000-0000</a></p>
+                <p>Endereço: Rua Exemplo, 123 - Cidade/UF</p>
+            </div>
+    
+        </div>
+    </footer>
+    
+</body>
+</html>
