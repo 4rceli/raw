@@ -91,6 +91,8 @@ nav a.active {
     gap: 20px;
     transition: right 0.3s ease-in-out;
     z-index: 999;
+
+    
 }
 
 .sidebar {
@@ -103,6 +105,7 @@ nav a.active {
     transition: right 0.3s ease;
     z-index: 999;
 }
+
 
 .sidebar a {
     color: white;
@@ -213,7 +216,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    max-width: 100%;
+    max-width: 300vh;
     margin: 0 auto;
 }
 
