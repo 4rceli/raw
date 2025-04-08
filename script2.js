@@ -29,27 +29,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Abrir sidebar
-const menuToggle = document.getElementById("menu-toggle");
-const sidebar = document.getElementById("sidebar");
-const closeSidebar = document.getElementById("close-sidebar");
+ // Abrir sidebar
+    menuToggle.addEventListener("click", (e) => {
+        e.stopPropagation(); // impede que o clique suba pro window
+        sidebar.style.right = "0";
+    });
 
-menuToggle.addEventListener("click", () => {
-    sidebar.style.right = "0";
-});
-
-closeSidebar.addEventListener("click", () => {
-    sidebar.style.right = "-250px";
-});
-
-// Fecha a sidebar ao clicar fora dela (opcional)
-window.addEventListener("click", (e) => {
-    if (e.target === sidebar) {
+    // Fechar pelo botão X
+    closeSidebar.addEventListener("click", (e) => {
+        e.stopPropagation();
         sidebar.style.right = "-250px";
-    }
-});
+    });
 
-document.addEventListener("DOMContentLoaded", () => {
+    // Fechar clicando fora da sidebar
+    window.addEventListener("click", (e) => {
+        // Só fecha se o clique NÃO for dentro da sidebar nem no botão
+        if (!sidebar.contains(e.target) && e.target !== menuToggle) {
+            sidebar.style.right = "-250px";
+        }
+    });
+
+    // Marcar a aba ativa no menu
     const links = document.querySelectorAll("nav a");
     const currentPath = window.location.pathname;
 
@@ -59,5 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 
 
